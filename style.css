@@ -1,0 +1,332 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+
+    padding: 30px 15px;
+
+    color: #3d2a1b;
+
+    background:
+        linear-gradient(135deg,
+            #C0977D,
+            #A67B5B);
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    padding: 35px;
+
+    background-color: #fffaf5;
+
+    border-radius: 20px;
+
+    border: 2px solid #9B5C42;
+
+    box-shadow:
+        0 15px 40px rgba(111, 79, 40, 0.30);
+}
+
+
+
+h1 {
+    text-align: center;
+
+    margin-bottom: 20px;
+
+    color: #6F4F28;
+
+    font-size: 28px;
+
+    font-weight: 700;
+}
+
+
+#foto-bianca {
+
+    margin: auto 200px;
+
+    width: 200px;
+
+    border: 6px solid #7a5631;
+
+    border-radius: 16px;
+
+    outline: 5px solid #6F4F28;
+
+}
+
+
+form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 17px;
+
+    margin-bottom: 25px;
+}
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+label {
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #6F4F28;
+}
+
+
+input {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    font-size: 16px;
+
+    color: #3d2a1b;
+
+    background-color: #fffaf5;
+
+    border: 2px solid #C0977D;
+
+    border-radius: 9px;
+
+    transition: 0.2s;
+}
+
+input::placeholder {
+    color: #A67B5B;
+}
+
+input:hover {
+    border-color: #9B5C42;
+}
+
+input:focus {
+    outline: none;
+
+    background-color: white;
+
+    border-color: #6F4F28;
+
+    box-shadow:
+        0 0 0 4px rgba(111, 79, 40, 0.15);
+}
+
+
+
+button {
+    padding: 12px 16px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+
+.btn-primary {
+    background:
+        linear-gradient(135deg,
+            #6F4F28,
+            #9B5C42);
+
+    color: white;
+}
+
+.btn-primary:hover {
+    background:
+        linear-gradient(135deg,
+            #5b3f20,
+            #7f4935);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 18px rgba(111, 79, 40, 0.30);
+}
+
+
+.resumo-container {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+
+    padding: 18px;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(135deg,
+            #f8eee7,
+            #C0977D);
+
+    border: 2px solid #A67B5B;
+}
+
+#total-estoque {
+    font-size: 18px;
+
+    color: #6F4F28;
+}
+
+
+.btn-danger {
+    background-color: #9B5C42;
+
+    color: white;
+
+    white-space: nowrap;
+}
+
+.btn-danger:hover {
+    background-color: #6F4F28;
+
+    transform: translateY(-1px);
+}
+
+
+.tabela-container {
+    width: 100%;
+
+    overflow-x: auto;
+
+    border-radius: 10px;
+
+    border: 1px solid #A67B5B;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 12px;
+
+    text-align: center;
+}
+
+th {
+    background:
+        linear-gradient(135deg,
+            #6F4F28,
+            #9B5C42);
+
+    color: white;
+
+    font-size: 13px;
+
+    text-transform: uppercase;
+}
+
+td {
+    border-bottom: 1px solid #C0977D;
+
+    color: #4a3424;
+
+    background: #fffaf5;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: #f8eee7;
+}
+
+tbody tr:hover td {
+    background-color: #ead8ca;
+}
+
+
+.btn-remover {
+    padding: 7px 10px;
+
+    background-color: #C0977D;
+
+    color: #3d2a1b;
+
+    font-size: 12px;
+
+    border-radius: 6px;
+}
+
+.btn-remover:hover {
+    background-color: #9B5C42;
+
+    color: white;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+    .container {
+        padding: 25px 18px;
+
+        border-radius: 16px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    .foto-bianca {
+        width: 135px;
+        height: 135px;
+    }
+
+    .resumo-container {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .btn-danger {
+        width: 100%;
+    }
+
+    .tabela-container {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 600px;
+    }
+}
