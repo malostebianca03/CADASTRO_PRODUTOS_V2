@@ -160,3 +160,5 @@ function atualizarInterface() {
 // e atualiza a interface gráfica.
 carregarDoLocalStorage();
 atualizarInterface();
+
+atualizarInterface();
